@@ -1,0 +1,14 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: password
+    ports: ["5432:5432"]
+  coturn:
+    image: instrumentisto/coturn
+    command: -n --log-file stdout --min-port=30000 --max-port=30049
+    ports:
+      - "3478:3478/udp"
+      - "3478:3478/tcp"
+      - "30000-30049:30000-30049/udp"

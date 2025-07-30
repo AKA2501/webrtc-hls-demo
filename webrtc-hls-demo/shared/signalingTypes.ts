@@ -1,0 +1,1 @@
+export interface JoinPayload { roomId: string; rtpCapabilities: any; }

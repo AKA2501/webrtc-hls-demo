@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "hls.js": "^1.4.12",
+    "mediasoup-client": "3.13.0",
+    "next": "14.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/react": "19.1.9",
+    "typescript": "^5.8.3"
+  }
+}
