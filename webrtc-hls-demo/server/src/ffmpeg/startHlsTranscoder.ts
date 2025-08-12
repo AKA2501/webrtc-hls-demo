@@ -12,8 +12,7 @@ export class HlsTranscoder {
 
   constructor(
     private roomId: string,
-    baseDir = '/mnt/c/Users/aniru/OneDrive/Desktop/Fermion/webrtc-hls-demo/public/hls'
-
+    baseDir = path.join(process.cwd(), 'public', 'hls')
   ) {
     this.outputDir = path.join(baseDir, roomId);
     

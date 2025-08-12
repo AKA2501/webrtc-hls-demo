@@ -13,9 +13,9 @@ export default function WatchPage() {
     currentTime: 0,
     latency: 0
   });
-  
+
   const roomId = 'demo'; // You can make this dynamic
-  const hlsUrl = `http://localhost:3001/server/public/hls/${roomId}/stream.m3u8`;
+  const hlsUrl = `http://localhost:3001/hls/${roomId}/stream.m3u8`;
 
   useEffect(() => {
     if (!videoRef.current) return;
